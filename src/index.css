@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* styling for book table data */
+.books-table {
+  margin-top: 1%;
+  width: 85%;
+  box-shadow: 2px 2px 2px  2px hotpink;
+  margin-bottom: 5%;
+}
+.books-table, th, td {
+  /* border: 2px solid blue; */
+  border-collapse: collapse;
+  padding: 1%;
+}
+.books-table thead tr th{
+  padding: 2%;
+}
+.dueDatePassed {
+  border-right: 6px solid red;  
+}
+
+
+
+/* styling delete icon index in book table */
+.book_delete_icon{
+  border-right: 2px solid pink;
+  padding-right: 3%;
+  margin-right: 3%;
+}
+
+/* styling for custom button */
+.customButton {
+  background-color: white;
+  color: black;
+  padding: 4% 2%;
+  cursor: pointer;
+  border: 0px;
+  box-shadow: 1px 1px 2px 2px hotpink;
+  margin-right: 1%;
+  /* width: 100px; */
+}
+
+/* styling for add button and its div */
+.add-books-wrapper {
+  margin-top: 3%;
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+}
+.add-book_button {
+  padding: 1%;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* styling modal of add book */
+.modal-Container {
+  border: 2px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  padding: 0% 1% 1% 1% ;
+  background-color: white;
+  width: 40%;
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* add book form styling */
+.addBookForm input {
+  width: 80%;
+  border-radius: 10px;
+  padding: 2%;
+}
+.addBookForm select {
+  width: 85%;
+  border-radius: 10px;
+  padding: 2%;
+}
+.newBook {
+  padding: 1%;
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* styling modal for student table */
+.studentTable {
+  margin-top: 1%;
+  width: 100%;
+  box-shadow: 2px 2px 2px  2px hotpink;
+  margin-bottom: 5%;
+}
+.studentTable, th, td {
+  border-collapse: collapse;
+  padding: 1%;
+}
+.studentTable thead tr th{
+  padding: 2%;
+}
+
+.modal-wrapper{
+  position: absolute;
+  top: 30%;
+  border: 2px solid black; 
+  border-radius: 10px;
+  padding: 0% 1% 1% 1% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 60%;
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+  .books-table {
+    margin-top: 1%;
+    width: 90%;
+    box-shadow: 2px 2px 2px  2px hotpink;
+    margin-bottom: 5%;
+  }
+  .customButton {
+    background-color: white;
+    color: black;
+    padding: 3% 2%;
+    cursor: pointer;
+    border: 0px;
+    box-shadow: 1px 1px 2px 2px hotpink;
+    margin-right: 1%;
+  }
+  .add-books-wrapper {
+    margin-top: 3%;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .books-table {
+    margin-top: 1%;
+    width: 100%;
+    box-shadow: 2px 2px 2px  2px hotpink;
+    margin-bottom: 5%;
+  }
+  .customButton {
+    background-color: white;
+    color: black;
+    padding: 3% 2%;
+    cursor: pointer;
+    border: 0px;
+    box-shadow: 1px 1px 2px 2px hotpink;
+    margin-right: 1%;
+  }
+  .add-books-wrapper {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
