@@ -27,18 +27,22 @@ export const BOOLEAN_TRUE: boolean = true
 export const BOOLEAN_FALSE: boolean = false
 export const STRING = "Edit Student"
 
-type responseType = {
-  	config: any,
-  	data: {
-  		assigned: boolean,
-  		author: string,
-  		dition: number,
-  		id: number,
-  		name: string,
-  		studentDetail: StudentDetails[]
-  	},
-  	headers: any,
-  	request: any
-  	status: number,
-  	statusText: string,
+// type responseType = {
+//   	config: any,
+//   	data: {
+//   		assigned: boolean,
+//   		author: string,
+//   		dition: number,
+//   		id: number,
+//   		name: string,
+//   		studentDetail: StudentDetails[]
+//   	},
+//   	headers: any,
+//   	request: any
+//   	status: number,
+//   	statusText: string,
+// }
+
+type BooksInfo = {
+	name: string;
 }
